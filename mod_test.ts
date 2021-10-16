@@ -1,6 +1,6 @@
-import { test, assertEquals } from "./test_deps.ts";
 import { getHelloWorld } from "./mod.ts";
+import {assertEquals} from './test_deps.ts'
 
-test(function test_get_hello_world() {
+Deno.test("get hello world", function (): void {
   assertEquals(getHelloWorld(), "\x1b[1mHello World\x1b[22m");
 });
